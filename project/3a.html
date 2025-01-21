@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Product Catalog Dashboard</title>
   <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdn.lordicon.com/lordicon.js"></script>
 </head>
 <body class="bg-gray-100 font-sans">
   <div class="flex flex-col min-h-screen">
@@ -53,11 +54,16 @@
       <!-- Main Content -->
       <main class="flex-1 p-6"> 
         <!-- Header -->
-        <header class="mb-6"> 
-          <h1 class="text-2xl font-bold">Product Catalog</h1>
-          <p class="text-gray-600">Manage and organize your products here.</p>
-        </header>
-
+        <header class="mb-6 flex items-center justify-between">
+            <div>
+              <h1 class="text-2xl font-bold">Product Catalog</h1>
+              <p class="text-gray-600">Manage and organize your products here.</p>
+            </div>
+            <button class="bg-green-600 text-white px-4 py-2 rounded hover:bg-green-700">
+              + Add Product
+            </button>
+          </header>
+          
         <!-- Product Table -->
         
           <input
@@ -84,20 +90,42 @@
               <tr>
                 <td class="border px-4 py-2 text-center">1</td>
                 <td class="border px-4 py-2 text-center">
-                  <img src="jogging.jpeg" alt="Thumbnail" class="w-10 h-10">
+                    <lord-icon
+                    src="https://cdn.lordicon.com/gwvmctbb.json"
+                    trigger="loop"
+                    delay="1500"
+                    colors="primary:#848484,secondary:#e88c30"
+                    style="width:50px;height:50px">
+                </lord-icon>
                 </td>
                 <td class="border px-4 py-2">Jogging Shoes</td>
                 <td class="border px-4 py-2 text-blue-500">Fashion Item</td>
                 <!-- <td class="border px-4 py-2">SKU123</td> -->
                 <td class="border px-4 py-2">In stock</td>
                 <td class="border px-4 py-2 text-green-600 line-through">₹650</td>
-                <td class="border px-4 py-2"><img src="edit.jpg" alt="Thumbnail" class="w-10 h-10"></td>
-                <td class="border px-4 py-2"><img src="delete.jpg"Thumbnail" class="w-10 h-10"></td>
+                <td class="border px-4 py-2"><lord-icon
+                    src="https://cdn.lordicon.com/exymduqj.json"
+                    trigger="loop"
+                    delay="1000"
+                    colors="primary:#1b1091,secondary:#e8e230"
+                    style="width:50px;height:50px">
+                </lord-icon></td>
+                <td class="border px-4 py-2"><lord-icon
+                    src="https://cdn.lordicon.com/hwjcdycb.json"
+                    trigger="hover"
+                    colors="primary:#242424,secondary:#c71f16"
+                    style="width:30px;height:30px">
+                </lord-icon></td>
               </tr>
               <tr>
                 <td class="border px-4 py-2 text-center">2</td>
                 <td class="border px-4 py-2 text-center">
-                  <img src="facewash.jpeg" alt="Thumbnail" class="w-10 h-10">
+                    <lord-icon
+                    src="https://cdn.lordicon.com/wrkgaara.json"
+                    trigger="hover"
+                    colors="primary:#9ce5f4,secondary:#ee6d66"
+                    style="width:50px;height:50px">
+                </lord-icon>
                 </td>
                 <td class="border px-4 py-2">Ponds Face wash</td>
                 <td class="border px-4 py-2 text-blue-500">Health Care</td>
@@ -106,13 +134,30 @@
                 <td class="border px-4 py-2">
                   <span class="line-through text-red-600">₹180</span> ₹175
                 </td>
-                <td class="border px-4 py-2"><img src="edit.jpg" alt="Thumbnail" class="w-10 h-10"></td>
-                <td class="border px-4 py-2"><img src="delete.jpg"Thumbnail" class="w-10 h-10"></td>
+                <td class="border px-4 py-2"><lord-icon
+                    src="https://cdn.lordicon.com/exymduqj.json"
+                    trigger="loop"
+                    delay="1000"
+                    colors="primary:#1b1091,secondary:#e8e230"
+                    style="width:50px;height:50px">
+                </lord-icon></td>
+                <td class="border px-4 py-2"><lord-icon
+                    src="https://cdn.lordicon.com/hwjcdycb.json"
+                    trigger="hover"
+                    colors="primary:#242424,secondary:#c71f16"
+                    style="width:30px;height:30px">
+                </lord-icon></td>
               </tr>
               <tr>
                 <td class="border px-4 py-2 text-center">3</td>
                 <td class="border px-4 py-2 text-center">
-                  <img src="tea.jpeg" alt="Thumbnail" class="w-10 h-10">
+                    <lord-icon
+    src="https://cdn.lordicon.com/pwbcwjje.json"
+    trigger="loop"
+    state="loop-cycle"
+    colors="primary:#9ce5f4,secondary:#ee6d66"
+    style="width:50px;height:50px">
+</lord-icon>
                 </td>
                 <td class="border px-4 py-2">Tea Powder</td>
                 <td class="border px-4 py-2 text-blue-500">Tea</td>
@@ -121,13 +166,32 @@
                 <td class="border px-4 py-2">
                   <span class="line-through text-green-600 line-through">₹160</span> 
                 </td>
-                <td class="border px-4 py-2"><img src="edit.jpg" alt="Thumbnail" class="w-10 h-10"></td>
-                <td class="border px-4 py-2"><img src="delete.jpg"Thumbnail" class="w-10 h-10"></td>
+                <td class="border px-4 py-2"><lord-icon
+                    src="https://cdn.lordicon.com/exymduqj.json"
+                    trigger="loop"
+                    delay="1000"
+                    colors="primary:#1b1091,secondary:#e8e230"
+                    style="width:50px;height:50px">
+                </lord-icon></td>
+                <td class="border px-4 py-2"><lord-icon
+                    src="https://cdn.lordicon.com/hwjcdycb.json"
+                    trigger="hover"
+                    colors="primary:#242424,secondary:#c71f16"
+                    style="width:30px;height:30px">
+                </lord-icon></td>
               </tr>
               <tr>
                 <td class="border px-4 py-2 text-center">4</td>
                 <td class="border px-4 py-2 text-center">
-                  <img src="milk.jpg" alt="Thumbnail" class="w-10 h-10">
+                    
+                    <lord-icon
+                        src="https://cdn.lordicon.com/sbrvirwc.json"
+                        trigger="in"
+                        delay="1500"
+                        state="in-reveal"
+                        colors="primary:#9ce5f4,secondary:#c69cf4"
+                        style="width:50px;height:50px">
+                    </lord-icon>
                 </td>
                 <td class="border px-4 py-2">Milk</td>
                 <td class="border px-4 py-2 text-blue-500">Milk</td>
@@ -136,13 +200,30 @@
                 <td class="border px-4 py-2">
                   <span class="line-through text-green-600 line-through">₹52</span> 
                 </td>
-                <td class="border px-4 py-2"><img src="edit.jpg" alt="Thumbnail" class="w-10 h-10"></td>
-                <td class="border px-4 py-2"><img src="delete.jpg"Thumbnail" class="w-10 h-10"></td>
+                <td class="border px-4 py-2"><lord-icon
+                    src="https://cdn.lordicon.com/exymduqj.json"
+                    trigger="loop"
+                    delay="1000"
+                    colors="primary:#1b1091,secondary:#e8e230"
+                    style="width:50px;height:50px">
+                </lord-icon></td>
+                <td class="border px-4 py-2"><lord-icon
+                    src="https://cdn.lordicon.com/hwjcdycb.json"
+                    trigger="hover"
+                    colors="primary:#242424,secondary:#c71f16"
+                    style="width:30px;height:30px">
+                </lord-icon></td>
               </tr>
               <tr>
                 <td class="border px-4 py-2 text-center">5</td>
                 <td class="border px-4 py-2 text-center">
-                  <img src="mouse.jpg" alt="Thumbnail" class="w-10 h-10">
+                    <lord-icon
+                    src="https://cdn.lordicon.com/evxithfv.json"
+                    trigger="loop"
+                    delay="1000"
+                    colors="primary:#16c72e,secondary:#242424"
+                    style="width:50px;height:50px">
+                </lord-icon>
                 </td>
                 <td class="border px-4 py-2">Mouse</td>
                 <td class="border px-4 py-2 text-blue-500">Electronics</td>
@@ -151,13 +232,30 @@
                 <td class="border px-4 py-2">
                   <span class="line-through text-green-600 line-through">₹1800</span> 
                 </td>
-                <td class="border px-4 py-2"><img src="edit.jpg" alt="Thumbnail" class="w-10 h-10"></td>
-                <td class="border px-4 py-2"><img src="delete.jpg"Thumbnail" class="w-10 h-10"></td>
+                <td class="border px-4 py-2"><lord-icon
+                    src="https://cdn.lordicon.com/exymduqj.json"
+                    trigger="loop"
+                    delay="1000"
+                    colors="primary:#1b1091,secondary:#e8e230"
+                    style="width:50px;height:50px">
+                </lord-icon></td>
+                <td class="border px-4 py-2"><lord-icon
+                    src="https://cdn.lordicon.com/hwjcdycb.json"
+                    trigger="hover"
+                    colors="primary:#242424,secondary:#c71f16"
+                    style="width:30px;height:30px">
+                </lord-icon></td>
               </tr>
               <tr>
                 <td class="border px-4 py-2 text-center">6</td>
                 <td class="border px-4 py-2 text-center">
-                  <img src="keyboard.jpg" alt="Thumbnail" class="w-10 h-10">
+                    <lord-icon
+                    src="https://cdn.lordicon.com/navborva.json"
+                    trigger="loop"
+                    delay="1000"
+                    colors="primary:#2516c7,secondary:#e8e230"
+                    style="width:50px;height:50px">
+                </lord-icon>
                 </td>
                 <td class="border px-4 py-2">Keyboard</td>
                 <td class="border px-4 py-2 text-blue-500">Electronics</td>
@@ -166,13 +264,30 @@
                 <td class="border px-4 py-2">
                   <span class="line-through text-red-600">₹4999</span> ₹3999
                 </td>
-                <td class="border px-4 py-2"><img src="edit.jpg" alt="Thumbnail" class="w-10 h-10"></td>
-                <td class="border px-4 py-2"><img src="delete.jpg"Thumbnail" class="w-10 h-10"></td>
+                <td class="border px-4 py-2"><lord-icon
+                    src="https://cdn.lordicon.com/exymduqj.json"
+                    trigger="loop"
+                    delay="1000"
+                    colors="primary:#1b1091,secondary:#e8e230"
+                    style="width:50px;height:50px">
+                </lord-icon></td>
+                <td class="border px-4 py-2"><lord-icon
+                    src="https://cdn.lordicon.com/hwjcdycb.json"
+                    trigger="hover"
+                    colors="primary:#242424,secondary:#c71f16"
+                    style="width:30px;height:30px">
+                </lord-icon></td>
               </tr>
               <tr>
                 <td class="border px-4 py-2 text-center">7</td>
                 <td class="border px-4 py-2 text-center">
-                  <img src="jackets.jpg" alt="Thumbnail" class="w-10 h-10">
+                    <lord-icon
+                    src="https://cdn.lordicon.com/dayinyqx.json"
+                    trigger="loop"
+                    delay="1000"
+                    colors="primary:#4f1091,secondary:#ffffff"
+                    style="width:50px;height:50px">
+                </lord-icon>
                 </td>
                 <td class="border px-4 py-2">Jackets</td>
                 <td class="border px-4 py-2 text-blue-500">Fashion</td>
@@ -181,8 +296,19 @@
                 <td class="border px-4 py-2">
                   <span class="line-through text-red-600">₹1299</span> ₹999
                 </td>
-                <td class="border px-4 py-2"><img src="edit.jpg" alt="Thumbnail" class="w-10 h-10"></td>
-                <td class="border px-4 py-2"><img src="delete.jpg"Thumbnail" class="w-10 h-10"></td>
+                <td class="border px-4 py-2"><lord-icon
+                    src="https://cdn.lordicon.com/exymduqj.json"
+                    trigger="loop"
+                    delay="1000"
+                    colors="primary:#1b1091,secondary:#e8e230"
+                    style="width:50px;height:50px">
+                </lord-icon></td>
+                <td class="border px-4 py-2"><lord-icon
+                    src="https://cdn.lordicon.com/hwjcdycb.json"
+                    trigger="hover"
+                    colors="primary:#242424,secondary:#c71f16"
+                    style="width:30px;height:30px">
+                </lord-icon></td>
               </tr>
               
             </tbody>
